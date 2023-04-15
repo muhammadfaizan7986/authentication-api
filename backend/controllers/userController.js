@@ -25,6 +25,7 @@ const registerUser = AsyncHandler(async (req, res) => {
     password: hashedPassword,
   });
   res.json({
+    id:newUser._id,
     name,
     email,
     password,
